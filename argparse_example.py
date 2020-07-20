@@ -2,7 +2,7 @@ import math
 import argparse
 
 
-parser = argparse.ArgumentParser(description='Calculating volume of a cylinder')
+parser = argparse.ArgumentParser(description='Calculating volume of a Cylinder')
 parser.add_argument('-r', '--radius', required=True, type=int, help='Radius')
 parser.add_argument('-H', '--height', required=True, type=int, help='Height')
 args = parser.parse_args()
