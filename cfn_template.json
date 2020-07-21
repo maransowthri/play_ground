@@ -1,0 +1,25 @@
+{
+    "strikePrice": 4600,
+    "expiryDate": "31-Dec-2020",
+    "PE": {
+        "strikePrice": 4600,
+        "expiryDate": "31-Dec-2020",
+        "underlying": "NIFTY",
+        "identifier": "OPTIDXNIFTY31-12-2020PE4600.00",
+        "openInterest": 19,
+        "changeinOpenInterest": 0,
+        "pchangeinOpenInterest": 0,
+        "totalTradedVolume": 0,
+        "impliedVolatility": 0,
+        "lastPrice": 31,
+        "change": 0,
+        "pChange": 0,
+        "totalBuyQuantity": 9075,
+        "totalSellQuantity": 0,
+        "bidQty": 4575,
+        "bidprice": 3.05,
+        "askQty": 0,
+        "askPrice": 0,
+        "underlyingValue": 11022.2
+    }
+}
