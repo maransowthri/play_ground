@@ -9,7 +9,7 @@
 # print(t.to_yaml())
 
 
-from troposphere import Base64, FindInMap, GetAtt, Parameter, Output, Ref, Template, ec2, Sub
+from troposphere import Base64, FindInMap, GetAtt, Parameter, Output, Ref, Template, ec2, Sub, Equals
 
 
 template = Template()
@@ -30,6 +30,8 @@ template.add_mapping('RegionMap', {
     "ap-southeast-1": {"AMI": "ami-74dda626"},
     "ap-northeast-1": {"AMI": "ami-dcfa4edd"}
 })
+
+template.add_condition('IsProd', Equals(Ref('prod'), 'Production'))
 
 ec2_instance = template.add_resource(ec2.Instance(
     "Ec2Instance",
