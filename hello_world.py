@@ -1,12 +1,5 @@
-class Sample:
-    def __init__(self):
-        self.t = 5
-    
-    def get_t(self):
-        return self.t
+list_in = ['Madam', 'Malayalam', 'drawer', 'radar', 'Maran']
 
-
-a = Sample()
-m = a.t
-m = 8
-print(a.get_t())
+for word in list_in:
+    if word.strip().lower() == word.strip().lower()[::-1]:
+        print(word)
