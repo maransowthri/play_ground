@@ -1,5 +1,3 @@
-list_in = ['Madam', 'Malayalam', 'drawer', 'radar', 'Maran']
-
-for word in list_in:
-    if word.strip().lower() == word.strip().lower()[::-1]:
-        print(word)
+a = [1, 2, 3]
+[a.pop() for _ in range(1, len(a))]
+print(a)
